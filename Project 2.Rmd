@@ -1,10 +1,11 @@
 ---
-title: "Project 2"
-author: "innuganti"
-date: "June 18, 2018"
+title: " Basic Inferential Data Analysis Instructions"
+author: "dinh quy kien"
+date: "May 09, 2023"
 output:
-  html_document: default
+  word_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}

@@ -1,10 +1,11 @@
 ---
 title: "Statistical Inference Course Project Part 1"
-author: "innuganti"
-date: "June 18, 2018"
+author: "dinh quy kien"
+date: "May 09, 2023"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
+  word_document: default
 ---
 Synopsis
 The project consists of two parts:
@@ -20,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 library(tinytex)
 
-set.seed(2018)
+set.seed(2023)
 lambda <- 0.2
 n <- 40
 sim_data <- replicate(1000, rexp(n, lambda))
@@ -42,8 +43,8 @@ print (paste("Theoretical Mean = ", theoretical_mean))
 ```{r}
 # Histogram shows differences
 hist(mean_sim_data, col="light blue", xlab = "Mean Average", main="Distribution of Exponential Average")
-abline(v = theoretical_mean, col="brown")
-abline(v = sampleMean, col="green")
+abline(v = theoretical_mean, col="red")
+abline(v = sampleMean, col="blue")
 ```
 Question 2: Show how variable the sample is (via variance) and compare it to the theoretical variance of the distribution
 
@@ -85,4 +86,5 @@ Q-Q Normal Plot also indicates the normal distribution
 ```{r}
 qqnorm(mean_sim_data)
  qqline(mean_sim_data, col = "magenta")
-```
+ ```
+
